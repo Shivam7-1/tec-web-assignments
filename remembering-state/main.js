@@ -53,7 +53,7 @@ store.subscribe((state) => {
   console.log(allComments);
 
   // Removes all existing comments so we can re-render them
-  comments.innerHTML = '';
+  comments.innerText = '';
 
   // Loops over each comment, creates a custom my-comment element, sets the appropriate attributes, and appends it to the comments section
   for (const comment of allComments) {
